@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-navegacion">
+            <div class="navegador-izquierdo">
+                <img src="Recursos/Ic.png" alt="Logo" class="logo">
+                <span class="eslogan">Operaciones Básicas</span>
+            </div>
+            <div class="navegador-derecho">
+                <a href="#" class="icono-salir">Salir</a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="showContent('introduccion')">Introducción</a></li>
+                <li><a href="#" onclick="showContent('actividades')">Actividades</a></li>
+                <li><a href="#" onclick="showContent('presentacion')">Presentación</a></li>
+                <li><a href="#" onclick="showContent('video')">Video</a></li>
+                <li><a href="#" onclick="showContent('Prueba')">Prueba</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Introducción -->
+        <div class="content-item active" id="introduccion">
+            <h2>Introducción a la Multiplicación</h2>
+            <p>La multiplicación es una operación matemática básica que consiste en sumar un número tantas veces como lo indique otro número. Es una forma rápida de realizar sumas repetitivas.</p>
+            
+            <h3>Paso 1: Identificar los números</h3>
+            <p>Selecciona los números que deseas multiplicar. Por ejemplo:</p>
+            <pre>
+            4 × 3
+            </pre>
+            
+            <h3>Paso 2: Realizar la operación</h3>
+            <p>Multiplica los números. En este caso:</p>
+            <pre>
+            4 × 3 = 12
+            </pre>
+            
+            <h3>Paso 3: Verificar el resultado</h3>
+            <p>Para verificar la respuesta, realiza una suma repetida. Por ejemplo:</p>
+            <pre>
+            4 + 4 + 4 = 12
+            </pre>
+            
+            <h3>Propiedades importantes</h3>
+            <ul>
+                <li><strong>Conmutativa:</strong> El orden de los factores no altera el producto.</li>
+                <pre>4 × 3 = 3 × 4 = 12</pre>
+                <li><strong>Elemento neutro:</strong> Todo número multiplicado por 1 es igual a sí mismo.</li>
+                <pre>5 × 1 = 5</pre>
+                <li><strong>Propiedad del cero:</strong> Todo número multiplicado por 0 es 0.</li>
+                <pre>7 × 0 = 0</pre>
+            </ul>
+            
+            <h3>Ejemplo práctico</h3>
+            <p>Si tienes 3 bolsas con 4 caramelos cada una, el total de caramelos es:</p>
+            <pre>
+            3 × 4 = 12
+            </pre>
+            
+            <h3>Conclusión</h3>
+            <p>La multiplicación es fundamental en matemáticas y se utiliza en muchas áreas, como medir, calcular precios o resolver problemas diarios.</p>
+        </div>
+
+        <!-- Actividades -->
+        <div class="content-item" id="actividades">
+            <h2>Actividades de Aprendizaje</h2>
+            <h2>Ejercicios de Multiplicación</h2>
+            <p>Practica resolviendo estas multiplicaciones:</p>
+            <ul>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>6 × 4 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>9 × 7 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>8 × 5 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>12 × 3 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>15 × 2 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 6:</p>
+                    <pre>En una granja hay 5 corrales, y en cada uno hay 8 gallinas. ¿Cuántas gallinas hay en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 7:</p>
+                    <pre>Una clase tiene 10 estudiantes, y cada estudiante lleva 4 libros. ¿Cuántos libros hay en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 8:</p>
+                    <pre>Un vendedor vende 7 cajas de manzanas, y cada caja tiene 12 manzanas. ¿Cuántas manzanas vende en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 9:</p>
+                    <pre>En un edificio hay 8 pisos, y cada piso tiene 6 departamentos. ¿Cuántos departamentos hay en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 10:</p>
+                    <pre>Un tren tiene 5 vagones, y cada vagón puede llevar 20 pasajeros. ¿Cuántos pasajeros puede llevar en total?</pre>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Presentación -->
+        <div class="content-item" id="presentacion">
+            <h2>Presentación Electrónica</h2>
+            <embed src="Recursos/Multiplicación.pdf" type="application/pdf" width="750" height="600">
+        </div>
+
+        <!-- Video -->
+        <div class="content-item" id="video">
+            <h2>Video: Introducción a la Multiplicación</h2>
+            <iframe width="750" height="400" src="https://www.youtube.com/embed/YFtEaVw5k1A?si=Ci9VF3kdpPGeBSog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Prueba -->
+        <div class="content-item" id="Prueba">
+            <h2>Prueba de Multiplicación</h2>
+            <ul>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>6 × 4 = ?</pre>
+                    <input type="number" id="q1" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>9 × 5 = ?</pre>
+                    <input type="number" id="q2" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>7 × 3 = ?</pre>
+                    <input type="number" id="q3" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>8 × 8 = ?</pre>
+                    <input type="number" id="q4" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>12 × 6 = ?</pre>
+                    <input type="number" id="q5" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 6:</p>
+                    <pre>Pedro tiene 3 cajas con 5 lápices cada una. ¿Cuántos lápices tiene en total?</pre>
+                    <input type="number" id="q6" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 7:</p>
+                    <pre>En una semana hay 7 días. ¿Cuántos días hay en 4 semanas?</pre>
+                    <input type="number" id="q7" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 8:</p>
+                    <pre>Un paquete tiene 10 botellas y se compran 6 paquetes. ¿Cuántas botellas hay?</pre>
+                    <input type="number" id="q8" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 9:</p>
+                    <pre>En una clase hay 5 filas con 6 sillas cada una. ¿Cuántas sillas hay en total?</pre>
+                    <input type="number" id="q9" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 10:</p>
+                    <pre>Un árbol produce 15 manzanas al día. ¿Cuántas produce en 10 días?</pre>
+                    <input type="number" id="q10" placeholder="Tu respuesta">
+                </li>
+            </ul>
+            <button onclick="gradeQuiz()">Terminar y Ver Nota</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Operaciones Básicas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function gradeQuiz() {
+            const correctAnswers = [24, 45, 21, 64, 72, 15, 28, 60, 30, 150];
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const userAnswer = parseInt(document.getElementById(`q${i}`).value);
+                if (userAnswer === correctAnswers[i - 1]) {
+                    score++;
+                }
+            }
+            alert(`Tu nota es: ${score}/10`);
+        }
+
+        function showContent(sectionId) {
+            const items = document.querySelectorAll('.content-item');
+            items.forEach(item => item.classList.remove('active'));
+            const section = document.getElementById(sectionId);
+            if (section) section.classList.add('active');
+        }
+    </script>
+</body>
+</html>

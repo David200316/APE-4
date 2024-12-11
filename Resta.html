@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-navegacion">
+            <div class="navegador-izquierdo">
+                <img src="Recursos/Ic.png" alt="Logo" class="logo">
+                <span class="eslogan">Operaciones Básicas</span>
+            </div>
+            <div class="navegador-derecho">
+                <a href="#" class="icono-salir">Salir</a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="showContent('introduccion')">Introducción</a></li>
+                <li><a href="#" onclick="showContent('actividades')">Actividades</a></li>
+                <li><a href="#" onclick="showContent('presentacion')">Presentación</a></li>
+                <li><a href="#" onclick="showContent('video')">Video</a></li>
+                <li><a href="#" onclick="showContent('Prueba')">Prueba</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Introducción -->
+        <div class="content-item active" id="introduccion">
+            <h2>Introducción a la Resta</h2>
+            <p>La resta es una operación básica que permite encontrar la diferencia entre dos números. Es la base para resolver problemas que implican quitar, reducir o comparar cantidades.</p>
+            
+            <h3>Paso 1: Identificar los números</h3>
+            <p>Selecciona los números que deseas restar. Por ejemplo:</p>
+            <pre>
+            15 - 7
+            </pre>
+            
+            <h3>Paso 2: Realizar la operación</h3>
+            <p>Resta el número menor del mayor. En este caso:</p>
+            <pre>
+            15 - 7 = 8
+            </pre>
+            
+            <h3>Paso 3: Verificar el resultado</h3>
+            <p>Para verificar la respuesta, puedes sumar el número menor al resultado y verificar si obtienes el número mayor:</p>
+            <pre>
+            7 + 8 = 15
+            </pre>
+            
+            <h3>Propiedad importante</h3>
+            <p>La resta no es conmutativa, lo que significa que el orden de los números afecta el resultado:</p>
+            <pre>
+            15 - 7 ≠ 7 - 15
+            </pre>
+            
+            <h3>Ejemplo práctico</h3>
+            <p>Si tienes 10 manzanas y comes 3, el número de manzanas que te quedan es:</p>
+            <pre>
+            10 - 3 = 7
+            </pre>
+            
+            <h3>Conclusión</h3>
+            <p>La resta es fundamental en matemáticas y se utiliza a diario. Con práctica, aprenderás a resolver restas rápidamente.</p>
+        </div>
+
+        <!-- Actividades -->
+        <div class="content-item" id="actividades">
+            <h2>Actividades de Aprendizaje</h2>
+            <h2>Ejercicios de Resta</h2>
+            <p>Practica resolviendo estas restas:</p>
+            <ul>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>45 - 12 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>78 - 34 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>92 - 56 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>120 - 47 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>200 - 65 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 6:</p>
+                    <pre>Un granjero tenía 50 gallinas, pero vendió 18. ¿Cuántas gallinas le quedan?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 7:</p>
+                    <pre>En una tienda, había 75 paquetes de galletas, y 26 se vendieron. ¿Cuántos paquetes quedan?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 8:</p>
+                    <pre>Un tren lleva 150 pasajeros, y en la próxima estación bajan 45. ¿Cuántos pasajeros quedan en el tren?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 9:</p>
+                    <pre>En un jardín, había 85 flores, pero 32 se marchitaron. ¿Cuántas flores siguen floreciendo?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 10:</p>
+                    <pre>Un niño tenía 100 canicas, pero perdió 27. ¿Cuántas canicas tiene ahora?</pre>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Presentación -->
+        <div class="content-item" id="presentacion">
+            <h2>Presentación Electrónica</h2>
+            <embed src="Recursos/Resta.pdf" type="application/pdf" width="750" height="600">
+        </div>
+
+        <!-- Video -->
+        <div class="content-item" id="video">
+            <h2>Video: Resolución de Restas</h2>
+            <iframe width="750" height="400" src="https://www.youtube.com/embed/42vjqtleG9E?si=CvmKKiRmOrkHY-1d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Prueba -->
+        <div class="content-item" id="Prueba">
+            <h2>Prueba de Resta</h2>
+            <ul>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>45 - 17 = ?</pre>
+                    <input type="number" id="q1" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>78 - 33 = ?</pre>
+                    <input type="number" id="q2" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>90 - 45 = ?</pre>
+                    <input type="number" id="q3" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>120 - 85 = ?</pre>
+                    <input type="number" id="q4" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>65 - 25 = ?</pre>
+                    <input type="number" id="q5" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 6:</p>
+                    <pre>Pedro tenía 35 chocolates y se comió 12. ¿Cuántos chocolates le quedan?</pre>
+                    <input type="number" id="q6" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 7:</p>
+                    <pre>En un salón hay 50 estudiantes. Si 18 se van al recreo, ¿cuántos quedan en el salón?</pre>
+                    <input type="number" id="q7" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 8:</p>
+                    <pre>Juan tenía 100 pesos y gastó 40 en dulces. ¿Cuánto dinero le queda?</pre>
+                    <input type="number" id="q8" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 9:</p>
+                    <pre>En una tienda había 25 manzanas. Si se vendieron 9, ¿cuántas quedan?</pre>
+                    <input type="number" id="q9" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 10:</p>
+                    <pre>Un autobús tenía 60 pasajeros. En la próxima parada, bajan 20. ¿Cuántos quedan en el autobús?</pre>
+                    <input type="number" id="q10" placeholder="Tu respuesta">
+                </li>
+            </ul>
+            <button onclick="gradeQuiz()">Terminar y Ver Nota</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Operaciones Básicas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function gradeQuiz() {
+            const correctAnswers = [28, 45, 45, 35, 40, 23, 32, 60, 16, 40];
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const userAnswer = parseInt(document.getElementById(`q${i}`).value);
+                if (userAnswer === correctAnswers[i - 1]) {
+                    score++;
+                }
+            }
+            alert(`Tu nota es: ${score}/10`);
+        }
+
+        function showContent(sectionId) {
+            const items = document.querySelectorAll('.content-item');
+            items.forEach(item => item.classList.remove('active'));
+            const section = document.getElementById(sectionId);
+            if (section) section.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Operaciones Básicas</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="barra-navegacion">
+            <div class="navegador-izquierdo">
+                <img src="Recursos/Ic.png" alt="Logo" class="logo">
+                <span class="eslogan">Operaciones Básicas - Soporte</span>
+            </div>
+            <div class="navegador-derecho">
+                <a href="../index.html" class="icono-salir">Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="panel">
+        <div class="contenido-panel">
+            <div class="texto-panel">
+                <h3>Centro de Soporte</h3>
+                <p>¿Tienes alguna sugerencia o necesitas reportar un problema? Ayúdanos a mejorar enviándonos tus comentarios.</p>
+                <div class="comentario-usuario">
+                    <form id="formulario-soporte">
+                        <label for="tipo-comentario">¿Qué tipo de mensaje deseas enviar?</label>
+                        <select id="tipo-comentario" name="tipo-comentario">
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="problema">Reporte de Problema</option>
+                        </select>
+                        <textarea id="comentario-usuario" placeholder="Escribe aquí tu mensaje..." rows="5"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div id="mensaje-enviado" style="display:none;">
+                    <p>¡Gracias por tu comentario! Nuestro equipo de soporte lo revisará pronto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="panel" id="comentarios-recientes">
+        <section class="testimonios">
+            <h3>Comentarios Recientes</h3>
+            <div id="comentarios-guardados">
+                <!-- Aquí se mostrarán los comentarios enviados -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Operaciones Básicas. Todos los derechos reservados.</p>
+        <nav>
+            <ul class="pie-p">
+                <li><a href="#" style="text-decoration: none; color: #ffffff; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 500; font-style: italic;">Política de Privacidad</a></li>
+                <li><a href="#" style="text-decoration: none; color: #ffffff; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 500; font-style: italic;">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+        <p>Contactos:</p>
+        <div class="social-media">
+            <a href="#" class="social-icon facebook" aria-label="Facebook">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="#" class="social-icon instagram" aria-label="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const formulario = document.getElementById('formulario-soporte');
+        const mensajeEnviado = document.getElementById('mensaje-enviado');
+        
+        formulario.addEventListener('submit', (e) => {
+            e.preventDefault();
+            mensajeEnviado.style.display = 'block';
+            formulario.reset();
+        });
+    </script>
+</body>
+</html>

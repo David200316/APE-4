@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-navegacion">
+            <div class="navegador-izquierdo">
+                <img src="Recursos/Ic.png" alt="Logo" class="logo">
+                <span class="eslogan">Operaciones Básicas</span>
+            </div>
+            <div class="navegador-derecho">
+                <a href="#" class="icono-salir">Salir</a>
+            </div>
+             </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="showContent('introduccion')">Introducción</a></li>
+                <li><a href="#" onclick="showContent('actividades')">Actividades</a></li>
+                <li><a href="#" onclick="showContent('presentacion')">Presentación</a></li>
+                <li><a href="#" onclick="showContent('video')">Video</a></li>
+                <li><a href="#" onclick="showContent('Prueba')">Prueba</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="content-item active" id="introduccion">
+            <h2>Introducción a la Suma</h2>
+            <p>La suma es una de las operaciones básicas de la aritmética, utilizada para combinar dos o más números y obtener un total. Esta operación es fundamental en matemáticas y se aplica en numerosas situaciones cotidianas.</p>
+            
+            <h3>Paso 1: Identificar los números a sumar</h3>
+            <p>Primero, identifica los números que deseas sumar. Por ejemplo, si queremos sumar:</p>
+            <pre>
+            5 + 3
+            </pre>
+        
+            <h3>Paso 2: Realizar la operación</h3>
+            <p>Realiza la suma combinando los números:</p>
+            <pre>
+            5 + 3 = 8
+            </pre>
+            <p>El resultado, <code>8</code>, es el total de la suma.</p>
+        
+            <h3>Paso 3: Aplicar la propiedad conmutativa</h3>
+            <p>La suma tiene una propiedad importante llamada propiedad conmutativa, que significa que el orden de los números no afecta el resultado:</p>
+            <pre>
+            5 + 3 = 3 + 5 = 8
+            </pre>
+        
+            <h3>Paso 4: Verificar la suma</h3>
+            <p>Para verificar una suma, puedes descomponer los números en partes más pequeñas o utilizar herramientas como bloques visuales o ábacos. Por ejemplo, para verificar:</p>
+            <pre>
+            5 + 3 = 8
+            </pre>
+            <p>Podemos descomponer el <code>5</code> como <code>2 + 3</code> y sumar gradualmente:</p>
+            <pre>
+            (2 + 3) + 3 = 8
+            </pre>
+        
+            <h3>Ejemplo práctico</h3>
+            <p>Si tienes 5 manzanas y alguien te da 3 más, el total de manzanas será:</p>
+            <pre>
+            5 + 3 = 8
+            </pre>
+            <p>Esto ilustra cómo la suma nos ayuda a calcular totales en situaciones reales.</p>
+        
+            <h3>Paso 5: Explorar más ejemplos</h3>
+            <p>Practica con otros ejemplos:</p>
+            <pre>
+            7 + 2 = 9
+            10 + 15 = 25
+            </pre>
+        
+            <h3>Conclusión</h3>
+            <p>La suma es una herramienta poderosa y esencial en matemáticas. Con práctica, podrás realizar sumas de forma rápida y precisa.</p>
+            
+        </div>
+
+        <div class="content-item" id="actividades">
+            <h2>Actividades de Aprendizaje</h2>
+            <h2>Ejercicios de Suma</h2>
+            <p>Practica resolviendo estas sumas:</p>
+            <ul>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>25 + 17 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>64 + 29 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>82 + 48 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>78 + 92 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>105 + 38 = ?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>En una tienda, Ana compró 32 manzanas y 15 peras. ¿Cuántas frutas compró en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>Un autobús lleva 46 pasajeros, y en la próxima parada suben 28 más. ¿Cuántos pasajeros hay ahora?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>Juan tiene 150 pesos y recibe 75 pesos más de su abuela. ¿Cuánto dinero tiene ahora?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>En una escuela hay 230 estudiantes en primaria y 180 en secundaria. ¿Cuántos estudiantes hay en total?</pre>
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>En el parque, hay 12 niños jugando y luego llegan 9 más. ¿Cuántos niños hay en total?</pre>
+                </li>                
+            </ul>
+            
+        </div>
+
+        <div class="content-item" id="presentacion">
+            <h2>Presentación Electrónica</h2>
+            <embed src="Recursos/Suma.pdf" 
+            type="application/pdf" 
+            width="750" 
+            height="600">
+     
+        </div>
+
+        <div class="content-item " id="video">
+            <h2>Video: Resolución de Problemas</h2>
+            
+            <iframe class="video-m" width="750" height="400" src="https://www.youtube.com/embed/oexd_Dfic_Q?si=pKspSnAzkTezVA-7" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="content-item " id="Prueba">
+            <h2>Prueba de Suma</h2>
+            <ul>
+                <!-- Preguntas Numéricas -->
+                <li>
+                    <p>Ejercicio 1:</p>
+                    <pre>25 + 17 = ?</pre>
+                    <input type="number" id="q1" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 2:</p>
+                    <pre>48 + 32 = ?</pre>
+                    <input type="number" id="q2" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 3:</p>
+                    <pre>15 + 19 = ?</pre>
+                    <input type="number" id="q3" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 4:</p>
+                    <pre>60 + 25 = ?</pre>
+                    <input type="number" id="q4" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 5:</p>
+                    <pre>33 + 27 = ?</pre>
+                    <input type="number" id="q5" placeholder="Tu respuesta">
+                </li>
+
+                <!-- Preguntas del Mundo Real -->
+                <li>
+                    <p>Ejercicio 6:</p>
+                    <pre>En una tienda, Ana compró 12 manzanas y luego agregó 8 peras. ¿Cuántas frutas compró en total?</pre>
+                    <input type="number" id="q6" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 7:</p>
+                    <pre>Carlos tiene 15 lápices y su amigo le da 10 más. ¿Cuántos lápices tiene ahora?</pre>
+                    <input type="number" id="q7" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 8:</p>
+                    <pre>María tiene 25 caramelos y su hermana le da 20 más. ¿Cuántos caramelos tienen juntas?</pre>
+                    <input type="number" id="q8" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 9:</p>
+                    <pre>En un parque, hay 18 niños jugando. Luego llegan 12 más. ¿Cuántos niños hay ahora?</pre>
+                    <input type="number" id="q9" placeholder="Tu respuesta">
+                </li>
+                <li>
+                    <p>Ejercicio 10:</p>
+                    <pre>Un autobús tiene 30 pasajeros. En la siguiente parada, suben 20 más. ¿Cuántos pasajeros hay ahora en total?</pre>
+                    <input type="number" id="q10" placeholder="Tu respuesta">
+                </li>
+            </ul>
+
+            <!-- Botón para terminar -->
+            <button onclick="gradeQuiz()">Terminar y Ver Nota</button>
+
+            <!-- Script para verificar respuestas -->
+            <script>
+                function gradeQuiz() {
+                    // Respuestas correctas
+                    const correctAnswers = [42, 80, 34, 85, 60, 20, 25, 45, 30, 50];
+                    
+                    // Variables
+                    let score = 0;
+                    
+                    // Comprobación de respuestas
+                    for (let i = 1; i <= 10; i++) {
+                        const userAnswer = parseInt(document.getElementById(`q${i}`).value);
+                        if (userAnswer === correctAnswers[i - 1]) {
+                            score++; // Suma 1 punto si la respuesta es correcta
+                        }
+                    }
+                    
+                    // Muestra la nota
+                    alert(`Tu nota es: ${score}/10`);
+                }
+            </script>
+
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Operaciones Básicas. Todos los derechos reservados.</p>
+        <br>
+        <nav>
+            <ul class="pie-p">
+                <li><a href="#" style="text-decoration: none; color: #ffffff; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 500; font-style: italic;">Política de Privacidad</a></li>
+                <li><a href="#" style="text-decoration: none; color: #ffffff; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 500; font-style: italic;">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        // Función para mostrar y ocultar secciones
+        function showContent(sectionId) {
+            // Ocultar todas las secciones
+            const items = document.querySelectorAll('.content-item');
+            items.forEach(item => item.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
+
